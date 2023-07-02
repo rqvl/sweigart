@@ -12,15 +12,15 @@ def validate(board):
   
     isValid = True
     
-    # create chess board list the only way I know how
+    # create a chess board
     validKeys = []
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    letters = 'abcdefgh'
     s = ''
     for i in range(1,9):
         for j in range(len(letters)):
             s = str(i) + letters[j]
             validKeys.append(s)
-    
+
     # each has exactly one king
     numWhiteKing = 0
     numBlackKing = 0
