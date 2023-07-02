@@ -1,6 +1,6 @@
 # Solution to Chess Dictionary Validator practice problem from Ch. 5
 #
-# Chess piece names are written in the form of w-pawn, b-knight, etc.
+# Chess piece names are written in the form of wpawn, bknight, etc.
 #
 # rqvl@runbox.com
 
