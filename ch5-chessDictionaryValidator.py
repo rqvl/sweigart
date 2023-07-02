@@ -17,7 +17,7 @@ def validate(board):
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
     s = ''
     for i in range(1,9):
-        for j in range(8):
+        for j in range(len(letters)):
             s = str(i) + letters[j]
             validKeys.append(s)
     
