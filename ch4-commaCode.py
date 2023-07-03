@@ -5,20 +5,18 @@
 spam = ['apples', 'bananas', 'tofu', 'cats']
 eggs = []
 
-def commaCode(list):
+def commaCode(ham):
     s = ''
     
     #no empty lists
-    if len(list) == 0:
+    if len(ham) == 0:
         s = 'This list is empty.'
         return s
     
     #create string
-    for i in range(len(list)-1):
-        s += list[i]
-        s += ', '
-    s += ' and '
-    s += list[-1]
+    for i in range(len(ham)-1):
+        s += ham[i] + ', '
+    s += 'and ' + ham[-1] + '.'
     return s
 
 #test cases
