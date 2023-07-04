@@ -7,7 +7,7 @@ stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 inv = {'gold coin': 42, 'rope': 1}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 
-def addToInventory(inventory, addedItems):
+def addToInventory(inventory, addedItems): # to do: should return a value, not change dict?
     for item in addedItems:
         inventory.setdefault(item,0)
         inventory[item] += 1
@@ -21,6 +21,6 @@ def displayInventory(inventory):
         print(v,k)
     print("Total number of items: " + str(item_total))
 
-inv = addToInventory(inv, dragonLoot)
-
-displayInventory(inv)
+#displayInventory(stuff) # first part of problem
+inv = addToInventory(inv, dragonLoot) 
+displayInventory(inv) # list-to-dict
